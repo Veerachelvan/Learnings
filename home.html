@@ -1,0 +1,607 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="home.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- MDB CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet">
+
+    <!-- MDB JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!-- Navbar for main contant -->
+    <header>
+        <nav class="navbar navbar-expand-md bg-light sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img\logo.png" alt="Avatar Logo" style="width:30px;" class="rounded-pill">
+                    <strong> QuickStart</strong>
+                </a>
+                <ul class="navbar-nav d-flex justify-content-between">
+
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#features" class="nav-link">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#services" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    </div>
+                </ul>
+                <div class="dropdown">
+                    <div class="btn border border-info rounded-5 dropdown-toggle" data-bs-toggle="dropdown">Dropdown
+                    </div>
+                    <ul class="dropdown-menu ">
+                        <li><a href="#" class="dropdown-item"></a>Dropdown 1</li>
+                        <li><a href="#" class="dropdown-item"></a>Dropdown 1</li>
+                        <li><a href="#" class="dropdown-item"></a>Dropdown 1</li>
+                        <li><a href="#" class="dropdown-item"></a>Dropdown 1</li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Pages -->
+    <main class="main">
+
+        <!-- Home  -->
+
+        <section class="home" id="home" style="display: none;">
+
+            <!-- Wellcome -->
+            <div class="d-flex flex-column align-items-center justify-content-center text-center">
+                <h1 class="display-3">Welcome to QuickStart</h1>
+                <h3 class="display-6">Quickly start your project now and set the stage for success</h3>
+
+                <div class="container">
+                    <button class="btn btn-light border rounded-5 border-info mx-2 my-3" data-mdb-ripple-init
+                        data-mdb-ripple-color="dark">Get Started</button>
+                    <button class="btn btn-info text-white rounded-5 mx-2 my-3" data-mdb-ripple-init
+                        data-mdb-ripple-color="light">
+                        <i class="bi bi-skip-end-circle"></i> Watch Video
+                    </button>
+                </div>
+
+                <img src="img/hero-services-img.webp" id="welcomeImage" class="img-fluid"
+                    style="max-width: 50%; display: none; height: 100%;">
+            </div>
+
+            <!-- 3 card containers -->
+            <div class="container-fluid m-0 row p-3" style="background-color: rgba(190, 212, 212, 0.411); ">
+                <!-- card 1 -->
+                <div class="col-lg-4 col-md-6 bg-white  py-2">
+                    <div class="row">
+                        <div class="col-4 text-center d-flex justify-content-center align-items-center">
+                            <i class="bi bi-blockquote-right fs-1" style="width: 30px;"></i>
+                        </div>
+                        <div class="col-8">
+                            <h4>lorem ipsum</h4>
+                            <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="col-lg-4 col-md-6 bg-white  py-2">
+                    <div class="row">
+                        <div class="col-4 d-flex justify-content-center align-items-center">
+                            <i class="bi bi-backpack2 fs-1" style="width: 30px;"></i>
+                        </div>
+                        <div class="col-8">
+                            <h4>lorem ipsum</h4>
+                            <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="col-lg-4 col-md-6 bg-white  py-2">
+                    <div class="row">
+                        <div class="col-4 text-center justify-content-center d-flex align-items-center">
+                            <i class="bi bi-balloon-heart fs-1 p-100" style="width: 30px; "></i>
+                        </div>
+                        <div class="col-8">
+                            <h4>lorem ipsum</h4>
+                            <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About -->
+
+        <section class="box" id="about">
+
+            <div class="container d-grid d-lg-flex justify-content-center mt-2">
+
+                <!-- content container -->
+                <div class="container-fluid col-md-12 col-lg-6 mt-3 ">
+                    <p class="fs-5">WHO WE ARE</p>
+                    <div class="display-4">Unleashing Potential with Creative Strategy</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nulla consequuntur dolores maiores
+                        corporis aliquid provident, vero error totam explicabo unde cupiditate tenetur? Quia veniam iure
+                        maiores quod eum quidem!</p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, quaerat.</li>
+                        <li>Lorem Unleashing Potential with ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                            quaerat.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, quaerat.Unleashing Potential
+                            with
+                            Creative Strategy Unleashing Potential with Creative Strategy</li>
+                    </ul>
+                    <buttton class="btn btn-info text-white" data-mdb-ripple-init data-mdb-ripple-color="light">Read
+                        More</buttton>
+                </div>
+
+                <!-- image conatiner -->
+                <div
+                    class="container-fluid d-flex justify-content-center align-items-top row w-lg-50 col-md-12 col-lg-6">
+                    <div class="d-grid d-md-flex">
+                        <div class="col-md-6 col-12 h-50 me-3">
+                            <img src="img\about-company-1.jpg" class="img-fluid rounded mx-2 my-2">
+                        </div>
+                        <div class="d-grid col-md-6 col-12 h-50">
+                            <div class="col-12 my-2">
+                                <img src="img\about-company-2.jpg" class="img-fluid rounded mx-2">
+                            </div>
+                            <div class="col-12 my-2">
+                                <img src="img\about-company-3.jpg" class="img-fluid rounded mx-2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- image hover -->
+            <div class="container-fluid text-center row my-5" id="logo">
+                <div class="bg-image hover-overlay col-lg-2 col-md-4 col-6 mt-2">
+                    <img src="img/clients/client-1.png" class="img-fluid w-50">
+                    <a href="#!">
+                        <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+                    </a>
+                </div>
+                <div class="bg-image hover-overlay col-lg-2 col-md-4 col-6 mt-2">
+                    <img src="img/clients/client-2.png" class="img-fluid w-50">
+                    <a href="#!">
+                        <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+                    </a>
+                </div>
+                <div class="bg-image hover-overlay col-lg-2 col-md-4 col-6 mt-2">
+                    <img src="img/clients/client-3.png" class="img-fluid w-50">
+                    <a href="#!">
+                        <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+                    </a>
+                </div>
+                <div class="bg-image hover-overlay col-lg-2 col-md-4 col-6 mt-2">
+                    <img src="img/clients/client-4.png" class="img-fluid w-50">
+                    <a href="#!">
+                        <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+                    </a>
+                </div>
+                <div class="bg-image hover-overlay col-lg-2 col-md-4 col-6 mt-2">
+                    <img src="img/clients/client-5.png" class="img-fluid w-50">
+                    <a href="#!">
+                        <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+                    </a>
+                </div>
+                <div class="bg-image hover-overlay col-lg-2 col-md-4 col-6 mt-2">
+                    <img src="img/clients/client-6.png" class="img-fluid w-50">
+                    <a href="#!">
+                        <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Features -->
+
+        <section class="box" id="features">
+            <div class="container-fluid text-center pb-5"
+                style="background-color: rgba(190, 212, 212, 0.411); box-shadow: inset 0px 4px 37px 7px rgba(0,0,0,0.1); ">
+                <!-- heading -->
+                <div class="row m-auto pt-5 pb-3">
+                    <h1>Features</h1>
+                    <hr class="m-auto" style="width: 10rem;">
+                    <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+                </div>
+
+                <!-- sided cards -->
+                <div class="container  m-auto row">
+                    <div class=>
+                        <!-- card 1 -->
+                        <div class="card p-3 m-3">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="img\features-1.jpg" class="img-fluid rounded-5" alt="">
+                                </div>
+                                <div class="col-md-6 p-2 m-auto">
+                                    <h4 class="display-6 m-2">Features 1 </h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quos aliquid
+                                        magnam
+                                        placeat soluta temporibus </p>
+                                    <div class="btn btn-primary"> Read More</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card 2 -->
+                        <div class="card p-3 m-3">
+                            <div class="row">
+                                <div class="col-md-6 p-2 m-auto">
+                                    <h4 class="display-6 m-2">Features 2 </h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quos aliquid
+                                        magnam
+                                        placeat soluta temporibus </p>
+                                    <div class="btn btn-primary"> Read More</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="img\features-2.jpg" class="img-fluid rounded-5" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card 3 -->
+                        <div class="card p-3 m-3">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="img\features-3.jpg" class="img-fluid rounded-5" alt="">
+                                </div>
+                                <div class="col-md-6 p-2 m-auto">
+                                    <h4 class="display-6 m-2">Features 3 </h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quos aliquid
+                                        magnam
+                                        placeat soluta temporibus </p>
+                                    <div class="btn btn-primary"> Read More</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4 cards -->
+            <div class="inner-box container-fluid text-center">
+                <div class="row py-5 container-fluid ">
+                    <div class="col-md-4 col-lg-3 col-sm-6">
+                        <div class="card m-2">
+                            <div class="card-body rounded">
+                                <img src="https://picsum.photos/seed/picsum/200/300" class="img-fluid rounded" alt="">
+                            </div>
+                            <h5>Necessitatibus</h5>
+                            <p>lorem ipsum dolor sit amet consectetur adipisicing </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-sm-6">
+                        <div class="card m-2">
+                            <div class="card-body rounded">
+                                <img src="https://picsum.photos/id/1/200/300" class="img-fluid rounded" alt="">
+                            </div>
+                            <h5>Saepe</h5>
+                            <p>inima quidem suscipit deserunt officia arto possimus</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-sm-6">
+                        <div class="card m-2">
+                            <div class="card-body rounded">
+                                <img src="https://picsum.photos/id/8/200/300" class="img-fluid rounded" alt="">
+                            </div>
+                            <h5>Minima</h5>
+                            <p> architecto possimus fuga magni placeat repelendus </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-sm-6">
+                        <div class="card m-2">
+                            <div class="card-body rounded">
+                                <img src="https://picsum.photos/id/16/200/300" class="img-fluid rounded" alt="">
+                            </div>
+                            <h5>Voluptatum</h5>
+                            <p>voluptatum qui iste quam totam fugiat lab cumque</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Services -->
+
+        <section class="box" id="services">
+
+            <div class="container-fluid py-5"
+                style="background-color: rgba(190, 212, 212, 0.411); box-shadow: inset 0px 4px 37px 7px rgba(0,0,0,0.1);">
+
+                <!-- title -->
+                <div class="row text-center m-auto pt-5 pb-3">
+                    <h1>Services</h1>
+                    <hr class="m-auto" style="width: 10rem;">
+                    <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+                </div>
+
+                <!-- 2 Card -->
+                <div class=" container">
+
+                    <div class="row">
+
+                        <div class="sarvices-card col-lg-6">
+                            <div class="card my-3">
+                                <div class="card-body row">
+                                    <div class="col-3 d-flex justify-content-center m-auto"><img src="img\gif\1.gif"
+                                            class="img-fluid" alt="" style="width: 100px;"></div>
+                                    <div class="col-9">
+                                        <h5>Morbi non</h5>
+                                        <p>There are many variations of passages of Lorem Ipsum available, but the
+                                            majority have suffered alteration in some form, by injected humour</p>
+                                        <button class="btn text-info">Learn more -></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sarvices-card col-lg-6">
+                            <div class="card my-3">
+                                <div class="card-body row">
+                                    <div class="col-3 d-flex justify-content-center m-auto"><img src="img\gif\2.gif"
+                                            class="img-fluid" alt="" style="width: 100px;"></div>
+                                    <div class="col-9">
+                                        <h5>Temporibus autem</h5>
+                                        <p>In a free hour, when our power of choice is untrammelled and when nothing
+                                            prevents untrammelled and when nothing prevents our being able to do what we
+                                            like best</p>
+                                        <button class="btn text-info">Learn more -></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="sarvices-card col-lg-6">
+                            <div class="card my-3">
+                                <div class="card-body row">
+                                    <div class="col-3 d-flex justify-content-center m-auto"><img src="img\gif\3.gif"
+                                            class="img-fluid" alt="" style="width: 100px;"></div>
+                                    <div class="col-9">
+                                        <h5>Rackham</h5>
+                                        <p>To take a trivial example, which of us ever undertakes laborious physical
+                                            exercise, except to obtain some advantage from it</p>
+                                        <button class="btn text-info">Learn more -></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sarvices-card col-lg-6">
+                            <div class="card my-3">
+                                <div class="card-body row">
+                                    <div class="col-3 d-flex justify-content-center m-auto"><img src="img\gif\4.gif"
+                                            class="img-fluid" alt="" style="width: 100px;"></div>
+                                    <div class="col-9">
+                                        <h5>Finibus Bonorum</h5>
+                                        <p>These cases are perfectly simple and easy to distinguish. In a free hour,
+                                            when our power of choice is untrammelled and when nothing prevents our</p>
+                                        <button class="btn text-info">Learn more -></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="sarvices-card col-lg-6">
+                            <div class="card my-3">
+                                <div class="card-body row">
+                                    <div class="col-3 d-flex justify-content-center m-auto"><img src="img\gif\5.gif"
+                                            class="img-fluid" alt="" style="width: 100px;"></div>
+                                    <div class="col-9">
+                                        <h5>Malorum</h5>
+                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                                        </p>
+                                        <button class="btn text-info">Learn more -></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sarvices-card col-lg-6">
+                            <div class="card my-3">
+                                <div class="card-body row">
+                                    <div class="col-3 d-flex justify-content-center m-auto"><img src="img\gif\6.gif"
+                                            class="img-fluid" alt="" style="width: 100px;"></div>
+                                    <div class="col-9">
+                                        <h5>Finibus Bonorum</h5>
+                                        <p>But I must explain to you how all this mistaken idea of denouncing pleasure
+                                            and praising pain was born and I will give you a complete account of the
+                                            system,</p>
+                                        <button class="btn text-info">Learn more -></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Contact -->
+
+        <section class="box" id="contact">
+
+            <!-- title -->
+            <div class="row text-center m-auto pt-5 pb-3">
+                <h1>Conatact me</h1>
+                <hr class="m-auto" style="width: 10rem;">
+                <p>If you whant to contact me or send any message about my work please find my details below</p>
+            </div>
+
+            <!-- information -->
+            <div class="container my-5">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="  m-2 py-5"
+                            style="background-color: rgba(190, 212, 212, 0.411); box-shadow: inset 0px 0px 21px 0px rgba(0,0,0,0.1);">
+                            <div class="card-body text-center">
+                                <div class="m-auto p-3">
+                                    <img src="/img/icons/user.png" class="img-fluid" alt="" style="width: 30px;">
+                                </div>
+                                <p>Veerchelvan Kaliyamoorthy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="  m-2 py-5"
+                            style="background-color: rgba(190, 212, 212, 0.411); box-shadow: inset 0px 0px 21px 0px rgba(0,0,0,0.1);">
+                            <div class="card-body text-center">
+                                <div class="m-auto p-3">
+                                    <img src="/img/icons/envelope.png" class="img-fluid" alt="" style="width: 30px;">
+                                </div>
+                                <p>veerachelvan@exp.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="  m-2 py-5"
+                            style="background-color: rgba(190, 212, 212, 0.411); box-shadow: inset 0px 0px 21px 0px rgba(0,0,0,0.1);">
+                            <div class="card-body text-center">
+                                <div class="m-auto p-3">
+                                    <img src="/img/icons/phone-call.png" class="img-fluid" alt="" style="width: 30px;">
+                                </div>
+                                <p> +91 639 274 8291</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- form -->
+            <div class="container mb-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="form-floating col-12 col-sm-6 my-3 ">
+                        <input type="text" class="form-control" id="name" placeholder="Name">
+                        <label for="name" class="form-label ms-3 ">Name</label>
+                    </div>
+                    <div class="form-floating col-12 col-sm-6 my-3">
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                        <label for="email" class="form-label ms-3">Email address</label>
+                    </div>
+                    <div class="form-floating col-12 my-3">
+                        <input type="subject" class="form-control" id="email" placeholder="Subject">
+                        <label for="subject" class="form-label ms-3">Subject</label>
+                    </div>
+                    <div class="form-floating col-12 my-3">
+                        <textarea class="form-control" placeholder="Lave a message here" id="message"
+                            style="height: 200px"></textarea>
+                        <label for="message" class="form-label ms-3">Message</label>
+                    </div>
+                    <div class="btn col-sm-4  mt-3 mb-4 rounded-5 bg-info text-white">Submit</div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- footer -->
+
+    <footer>
+        <div class="container-fluid pt-5" style="background-color: rgba(190, 212, 212, 0.411); box-shadow: inset 0px 4px 37px 7px rgba(0,0,0,0.1);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5 class="my-3">CUSTOMER CARE</h5>
+                        <p>Regular</p>
+                        <p>Blinded by desire</p>
+                        <p>Untrammelled</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="my-3">About us</h5>
+                        <p>Consequatur aut</p>
+                        <p>Basperiores</p>
+                        <p>Sapiente</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="my-3">Follow us</h5>
+                        <a class="social-icon mx-2">
+                            <i class="fab fa-facebook-f fs-1"></i>
+                        </a>
+                        <a class="social-icon mx-2">
+                            <i class="fab fa-instagram fs-1"></i>
+                        </a>
+                        <a class="social-icon mx-2">
+                            <i class="fab fa-twitter fs-1"></i>
+                        </a>
+                        <a class="social-icon mx-2">
+                            <i class="fab fa-github fs-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center">
+                <hr>
+                &copy; Copyright 2025 by Refsnes Data. All Rights Reserved.
+                <hr>
+            </div>
+            <div style="height: 50px;"></div>
+        </div>
+    </footer>
+
+    <!-- pageination -->
+    <nav class="d-flex justify-content-center fixed-bottom ">
+        <ul class="pagination pagination-sm  bg-info rounded">
+            <li class="page-item"><a href="#home" class="page-link text-white">1</a> </li>
+            <li class="page-item"><a class="page-link text-white" href="#about">2</a></li>
+            <li class="page-item"><a class="page-link text-white" href="#features">3</a></li>
+            <li class="page-item"><a class="page-link text-white" href="#services">4</a></li>
+            <li class="page-item"><a class="page-link text-white" href="#contact">5</a></li>
+        </ul>
+    </nav>
+</body>
+
+<!-- MDB -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.umd.min.js"></script>
+<script src="home.js"></script>
+
+</html>
